@@ -12,7 +12,7 @@ export default {
   name: 'App',
 
   components: {
-    mainPage
+    'main-page': mainPage
   },
 
   data: () => ({
