@@ -1,7 +1,12 @@
 <template>
-<div>
-    <h1>{{ getTitle }}</h1>
-</div>
+  <v-container>
+    <v-row align="start" justify="space-between">
+      <div class="display-2 cyan lighten-4">{{ getTitle }}</div>
+      <v-btn>
+        Modify title
+      </v-btn>
+    </v-row>
+  </v-container>
 </template>
 <script>
 export default {
@@ -12,3 +17,6 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+</style>

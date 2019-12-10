@@ -1,8 +1,20 @@
 <template>
-  <div>
-    <v-card>
-      <h1>{{ getContacts }}</h1>
-    </v-card>
+  <div class="display-1 amber lighten-4">
+    <ul class="pl-0">
+      <li v-for=" contact in getContacts" :key="contact.email">
+        <div >
+          <div class="display-1 d-inline">
+            {{ contact.name }}
+          </div>
+          <div class="subtitle-1 d-inline mb-1">
+            {{ contact.organisation}}
+          </div>
+        </div>
+        <div class="subtitle-2">
+          Email: {{ contact.email }}
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
 <script>
@@ -14,3 +26,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+li {
+  list-style-type: none;
+}
+</style>

@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h1>{{ getDescription }}</h1>
+
+  <div class="display-1 teal lighten-4">
+    {{ getDescription }}
   </div>
 </template>
 <script>
@@ -12,3 +13,6 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+</style>
