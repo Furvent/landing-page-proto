@@ -40,5 +40,15 @@ export default new Vuex.Store({
     pushContact(state, payload) {
       state.resource.contacts.push(payload.newConctact)
     }
+  },
+  actions: {
+    changeTitle(context, payload) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          context.commit('changeTitle', payload)
+          resolve()
+        }, 1000)
+      })
+    }
   }
 })
